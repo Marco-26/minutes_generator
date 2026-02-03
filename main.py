@@ -14,5 +14,5 @@ if __name__ == "__main__":
     print("File doesn't exist...")
     sys.exit()
     
-  min_generator = MinutesGenerator(max_tokens=10000)
+  min_generator = MinutesGenerator(max_tokens=10000, report_filename='minutes.txt')
   min_generator.generate(args.path)
